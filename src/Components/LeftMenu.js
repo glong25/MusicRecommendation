@@ -16,7 +16,7 @@ function LeftMenu() {
             <GiMusicSpell />
           </i>
 
-          <h2>Spotify</h2>
+          <h2>Music Recommendation</h2>
         </div>
 
         <i>
@@ -35,7 +35,7 @@ function LeftMenu() {
 
       <MenuPlayList />
 
-      <TrackList trackName={"Vitcutephomaique"} artistName={"GnahYuD"} />
+      <TrackList trackName={"Longdeptrai"} artistName={"Glong25"} />
     </div>
   );
 }
