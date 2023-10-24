@@ -1,8 +1,4 @@
-npm run start
 
-//track list để sửa ảnh ở dưới left corner
-// banner để sửa ảnh chính
-// rightMenu để sửa ảnh ở góc corner
 // Menuplayer.js là nơi thao tác các hành động phát chuyển và tăng volume
 // Menu.js là nơi list ra danh sách bài hát
 // Audiolist là nơi dùng để chuyển bài theo 1 cái list (menu.js là để liệt kê bài hát còn audio là nơi chuyển bài bằng cách click)
