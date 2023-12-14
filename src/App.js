@@ -1,8 +1,9 @@
 import "./App.css";
 import { LeftMenu } from "./Components/LeftMenu";
-import { MainContainer } from "./Components/MainContainer";
+import { MainContainer } from "./Pages/MainContainer";
 import { RightMenu } from "./Components/RightMenu";
 import { Footer } from "./Components/Footer";
+import MusicPlayer from "./Components/MusicPlayer";
 
 function App() {
   return (
@@ -10,10 +11,12 @@ function App() {
       <div className="App2">
         <LeftMenu />
         <MainContainer />
+       
         <RightMenu />
         <div className="background"></div>
       </div>
       <span className="bor"></span>
+      <MusicPlayer song={''} imgSrc={''} autoplay={''} />
       <Footer />
     </div>
   );

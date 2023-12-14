@@ -1,6 +1,6 @@
 import { BsJournalAlbum } from "react-icons/bs";
 import { BiLibrary } from "react-icons/bi";
-import { FaPodcast } from "react-icons/fa";
+import { FaPodcast, FaMicrophoneAlt } from "react-icons/fa";
 import {GiMicrophone} from 'react-icons/gi';
 import {IoMdRadio} from 'react-icons/io'
 import {AiFillHome} from 'react-icons/ai'
@@ -18,8 +18,8 @@ const MenuList = [
   },
   {
     id: 3,
-    icon: <IoMdRadio/>,
-    name: "Radio",
+    icon: <FaMicrophoneAlt/>,
+    name: "Artists",
   },
   {
     id: 4,

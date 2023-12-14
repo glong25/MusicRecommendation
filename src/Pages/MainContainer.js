@@ -1,10 +1,21 @@
 import React, { useEffect } from "react";
 import "../Styles/MainContainer.css";
 import { FaUsers } from "react-icons/fa";
-import { AudioList } from "./AudioList";
-import { Banner } from "./Banner";
+import { AudioList } from "../Components/AudioList";
+import { Banner } from "../Components/Banner";
 
 function MainContainer() {
+  useEffect(() => {
+    const allLi = document.querySelector(".menuList").querySelectorAll("li");
+
+    function changePopularActive() {
+      allLi.forEach((n) => n.classList.remove("active"));
+      this.classList.add("active");
+    }
+
+    allLi.forEach((n) => n.addEventListener("click", changePopularActive));
+  }, []);
+
   return (
     <div className="mainContainer">
       <Banner />
@@ -12,7 +23,7 @@ function MainContainer() {
       <div className="menuList">
         <ul>
           <li>
-            <a href="#">US-UK</a>
+            <a href="#">Popular</a>
           </li>
           <li>
             <a href="#">Albums</a>

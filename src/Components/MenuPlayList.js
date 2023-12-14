@@ -8,7 +8,7 @@ function MenuPlayList() {
   return (
     <div className="playListContainer">
       <div className="nameContainer">
-        <p>My Favorite</p>
+        <p>Playlists</p>
         <i>
           <FaPlus />
         </i>
@@ -17,7 +17,7 @@ function MenuPlayList() {
       <div className="playListScroll">
         {PlayList &&
           PlayList.map((list) => (
-            <div className="playLists">
+            <div className="playLists" key={list.id}>
               <i className="list">
                 <BsMusicNoteList />
               </i>
