@@ -11,11 +11,6 @@ function RightMenu() {
     <div className="rightContainer">
       <div className="goPro">
         <i>
-          <FaCrown className="duy" />
-          <p>Vip</p>
-        </i>
-
-        <i>
           <FaBell />
         </i>
 

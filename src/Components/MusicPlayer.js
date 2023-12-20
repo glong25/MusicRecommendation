@@ -24,6 +24,7 @@ function MusicPlayer({ song, imgSrc, auto }) {
   const progressBar = useRef(); //   reference to our prgressbar
   const animationRef = useRef(); //  reference to our animation
 
+
   useEffect(() => {
     const seconds = Math.floor(audioPlayer.current.duration);
     setDuration(seconds);
@@ -63,12 +64,12 @@ function MusicPlayer({ song, imgSrc, auto }) {
   const changeProgress = () => {
     audioPlayer.current.currentTime = progressBar.current.value;
 
-    // progressBar.current.style.setProperty(
-    //   "--played-width",
-    //   `${(progressBar.current.value / duration) * 100}%`
-    // );
+    progressBar.current.style.setProperty(
+      "--played-width",
+      `${(progressBar.current.value / duration) * 100}%`
+    );
 
-    // setCurrenttime(progressBar.current.value);
+    setCurrenttime(progressBar.current.value);
 
     changeCurrentTime();
   };
