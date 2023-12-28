@@ -1,10 +1,36 @@
 import "./App.css";
 import { LeftMenu } from "./Components/LeftMenu";
-import { MainContainer } from "./Pages/Artists/MainContainer";
+import { AlbumPage } from "./Pages/Artists/AlbumPage";
 import { RightMenu } from "./Components/RightMenu";
 import MusicPlayer from "./Components/MusicPlayer";
 import { useEffect, useState } from "react";
 import eventBus from "./Store/EventBus";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import ArtistsList from "./Pages/Artists/Artists";
+import { AlbumSongPage } from "./Pages/Artists/AlbumSongPage";
+import { PopularSongPage } from "./Pages/Artists/PopularSongPage";
+
+
+const router = createBrowserRouter([
+
+  {
+    path:"/Artists",
+    Component:ArtistsList,
+  },
+  {
+    path:"/Artists/:Artistsid",
+    Component:PopularSongPage,
+  },
+  {
+    path:"/Artists/:Artistsid/Albums",
+    Component:AlbumPage,
+  },
+  {
+    path:"/Artists/:Artistsid/Albums/:Albumsid",
+    Component:AlbumSongPage,
+  },
+  
+])
 function App() {
 
   const [song,setSong]=useState('')
@@ -32,8 +58,7 @@ function App() {
     <div className="App">
       <div className="App2">
         <LeftMenu />
-        <MainContainer />
-        <RightMenu />
+        <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
         <div className="background"></div>
       </div>
       <MusicPlayer song={song} imgSrc={img} autoplay={true} />

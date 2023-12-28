@@ -1,3 +1,3 @@
 export default function authHeader() {
-    return { "Authorization":  "Bearer  BQCcQguIX_RTniv3IR1oxdMTbTbmsKDEoAPg8Autc6CaEkkEU1HV3WtYusXsEe7dAvyQPJtQFPNxD297IEsTM7kX2_W4hSNjMvCPOeF8vlw7E5p8ViM" };
+    return { "Authorization":  "Bearer BQAJS_k9X6nBzy6d96jSVCr0jNalkct3uDrNf0HcNUeyW5C8ZGqA5f4S5b3LEF0W0m8lUq3PnjGb10GV0YofTZCmB-DAhibHOIkPh3CXJ7d0jqwO5Ks" };
 }

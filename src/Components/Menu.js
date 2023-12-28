@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "../Styles/LeftMenu.css";
 
 function Menu({ title, listObject }) {
+
+  
   useEffect(() => {
     const allLi = document
       .querySelector(".menuContainer ul")
@@ -23,7 +25,7 @@ function Menu({ title, listObject }) {
         {listObject &&
           listObject.map((li) => (
             <li key={li.id}>
-              <a href="#">
+              <a href={'/'+li.name}>
                 <i>{li.icon}</i>
                 <span> {li.name}</span>
               </a>
