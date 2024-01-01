@@ -1,12 +1,13 @@
 /* ArtistList.css */
 .artist-list-container {
-    width: 1100px;
-    text-align: center;
     max-height: 40%; /* Set a maximum height for the container */
-    overflow: auto; /* Add overflow property to make it scrollable */
-    
+    overflow: auto; /* Add overflow property to make it scrollable */  
   }
-  
+  .artist-list-container h2{
+    color: #f1f1f1;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
   .artist-list {
     list-style: none;
     padding: 0;
@@ -16,7 +17,17 @@
     margin: 0; /* Remove margin to avoid extra space at the bottom */
     
   }
-  
+  .artist-list h3{
+    color: #f1f1f1;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .artist-list p {
+    color: #848484;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
   .artist-item {
     margin: 10px;
     padding: 10px;

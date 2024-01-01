@@ -9,6 +9,8 @@
   overflow: hidden;
   display: flex;
   margin-bottom: 1px;
+  background: #2c2c2c;
+  
 }
 
 .background {
@@ -17,6 +19,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  
   background: url(./img/background.jpg) no-repeat center;
   background-size: cover;
   filter: grayscale(100);

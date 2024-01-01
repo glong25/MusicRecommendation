@@ -38,7 +38,7 @@ const ArtistsList = () => {
 
   return (
     <div className="artist-list-container" >
-      <h2>List of Altists:</h2>
+      <h2>Recommend Altists:</h2>
       <ul className="artist-list">
         {artists && artists.map((artist, index) => (
           <li key={index} className="artist-item" onClick={()=>routeChange(artist.id)}>

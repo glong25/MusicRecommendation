@@ -4,7 +4,7 @@ import { FaUsers } from "react-icons/fa";
 import { AudioList } from "../../Components/AudioList";
 import { Banner } from "../../Components/Banner";
 import Album from "./Album";
-import ArtistList from "./Album";
+import AlbumList from "./Album";
 import artistsData from './artistsData';
 import axios from "axios";
 import authHeader from "../../Service/auth_header";
@@ -55,7 +55,7 @@ function AlbumPage() {
        
       </div>
 
-      <ArtistList />
+      <AlbumList />
     </div>
   );
 }
