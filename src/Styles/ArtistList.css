@@ -1,7 +1,7 @@
 /* ArtistList.css */
 .artist-list-container {
     max-height: 40%; /* Set a maximum height for the container */
-    overflow: auto; /* Add overflow property to make it scrollable */  
+    overflow-x: auto; /* Add overflow property to make it scrollable */  
   }
   .artist-list-container h2{
     color: #f1f1f1;

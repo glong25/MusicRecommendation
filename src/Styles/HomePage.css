@@ -1,0 +1,21 @@
+.scrollable-component {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rebeccapurple orange;
+  max-height: 38%; 
+}
+
+/* For Webkit browsers like Chrome, Safari */
+.scrollable-component::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollable-component::-webkit-scrollbar-track {
+  background: orange;
+}
+
+.scrollable-component::-webkit-scrollbar-thumb {
+  background-color: rebeccapurple;
+  border-radius: 20px;
+  border: 3px solid orange;
+}

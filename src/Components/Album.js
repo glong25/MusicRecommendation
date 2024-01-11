@@ -1,9 +1,9 @@
 // ArtistList.js
 import React, { useEffect, useState } from 'react';
-import '../../Styles/ArtistList.css';
+import '../Styles/ArtistList.css';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
-import authHeader from '../../Service/auth_header';
+import authHeader from '../Service/auth_header';
 
 
 const AlbumList = () => {

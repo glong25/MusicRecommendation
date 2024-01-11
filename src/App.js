@@ -6,13 +6,22 @@ import MusicPlayer from "./Components/MusicPlayer";
 import { useEffect, useState } from "react";
 import eventBus from "./Store/EventBus";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import ArtistsList from "./Pages/Artists/Artists";
+import ArtistsList from "./Components/Artists";
 import { AlbumSongPage } from "./Pages/Artists/AlbumSongPage";
 import { PopularSongPage } from "./Pages/Artists/PopularSongPage";
+import HomePage from "./Pages/Home/HomePage";
+import RecommendPage from "./Pages/RecommendPage/RecommendPage";
 
 
 const router = createBrowserRouter([
-
+  {
+    path: "/Home",
+    Component: HomePage,
+  },
+  {
+    path: "/Recommend",
+    Component: RecommendPage,
+  },
   {
     path:"/Artists",
     Component:ArtistsList,
